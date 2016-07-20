@@ -23,7 +23,14 @@
     self.window = [[UIWindow alloc] initWithFrame:dimensoesTela];
     
     ListaContatosViewController* lista = [ListaContatosViewController new];
-    self.window.rootViewController = lista;
+    
+    UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:lista];
+    
+    self.window.rootViewController = nav;
+    
+    
+    
+    
     
     return YES;
 }
