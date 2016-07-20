@@ -16,6 +16,7 @@
 		B1786A031D3FDC23004E3358 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1786A011D3FDC23004E3358 /* LaunchScreen.storyboard */; };
 		B1786A0C1D4027EA004E3358 /* ContatoDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = B1786A0B1D4027EA004E3358 /* ContatoDAO.m */; };
 		B1786A0F1D4027FA004E3358 /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = B1786A0E1D4027FA004E3358 /* Contato.m */; };
+		B1786A121D402C58004E3358 /* ListaContatosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1786A111D402C58004E3358 /* ListaContatosViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		B1786A0B1D4027EA004E3358 /* ContatoDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContatoDAO.m; sourceTree = "<group>"; };
 		B1786A0D1D4027FA004E3358 /* Contato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contato.h; sourceTree = "<group>"; };
 		B1786A0E1D4027FA004E3358 /* Contato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contato.m; sourceTree = "<group>"; };
+		B1786A101D402C58004E3358 /* ListaContatosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaContatosViewController.h; sourceTree = "<group>"; };
+		B1786A111D402C58004E3358 /* ListaContatosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaContatosViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 				B1786A0B1D4027EA004E3358 /* ContatoDAO.m */,
 				B1786A0D1D4027FA004E3358 /* Contato.h */,
 				B1786A0E1D4027FA004E3358 /* Contato.m */,
+				B1786A101D402C58004E3358 /* ListaContatosViewController.h */,
+				B1786A111D402C58004E3358 /* ListaContatosViewController.m */,
 			);
 			path = ContatosIP67;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 			files = (
 				B1786A0C1D4027EA004E3358 /* ContatoDAO.m in Sources */,
 				B17869F81D3FDC23004E3358 /* FormularioContatoViewController.m in Sources */,
+				B1786A121D402C58004E3358 /* ListaContatosViewController.m in Sources */,
 				B17869F51D3FDC23004E3358 /* AppDelegate.m in Sources */,
 				B17869FE1D3FDC23004E3358 /* ContatosIP67.xcdatamodeld in Sources */,
 				B1786A0F1D4027FA004E3358 /* Contato.m in Sources */,

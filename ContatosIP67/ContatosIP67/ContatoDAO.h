@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Contato.h"
 
 @interface ContatoDAO : NSObject
+
+@property (strong) NSMutableArray<Contato*>* contatos;
+
++(ContatoDAO*) pegaInstancia;
+
+-(void) adiciona: (Contato*) contato;
 
 @end

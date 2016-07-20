@@ -10,4 +10,26 @@
 
 @implementation ContatoDAO
 
+static ContatoDAO* instancia;
+
+-(NSObject*) init{
+    self = [super init];
+    if(self != nil){
+        self.contatos = [NSMutableArray new];
+    }
+    return self;
+}
+
++(ContatoDAO*) pegaInstancia{
+    if(!instancia){
+        instancia = [ContatoDAO new];
+    }
+    return instancia;
+}
+
+-(void)adiciona:(Contato*)contato{
+    [self.contatos addObject: contato];
+    NSLog(@"Contatos: %@", self.contatos);
+}
+
 @end

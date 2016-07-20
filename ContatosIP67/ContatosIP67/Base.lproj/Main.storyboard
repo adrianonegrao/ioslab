@@ -73,13 +73,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ge-Bx-ZCe">
-                                <rect key="frame" x="120" y="381" width="65" height="30"/>
+                                <rect key="frame" x="122" y="314" width="65" height="30"/>
                                 <state key="normal" title="Adicionar"/>
+                                <connections>
+                                    <action selector="pegaDadosDoFormulario" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Tm-HJ-jaF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="email" destination="H2K-MD-Y0J" id="08L-pl-WwP"/>
+                        <outlet property="endereco" destination="W7f-e8-RuK" id="OVB-ei-WXO"/>
+                        <outlet property="nome" destination="DMh-Mc-dmD" id="tg1-H6-f3r"/>
+                        <outlet property="site" destination="WhR-70-lVk" id="cqv-o0-zv9"/>
+                        <outlet property="telefone" destination="KSo-OE-JRp" id="UnA-Pg-w08"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
