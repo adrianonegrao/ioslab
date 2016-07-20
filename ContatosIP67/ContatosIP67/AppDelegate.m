@@ -15,8 +15,16 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application
+                didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    UIScreen* telaDoAparelho = [UIScreen mainScreen];
+    CGRect dimensoesTela = [telaDoAparelho bounds];
+    self.window = [[UIWindow alloc] initWithFrame:dimensoesTela];
+    
+    ListaContatosViewController* lista = [ListaContatosViewController new];
+    self.window.rootViewController = lista;
+    
     return YES;
 }
 
