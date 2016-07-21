@@ -32,4 +32,8 @@ static ContatoDAO* instancia;
     NSLog(@"Contatos: %@", self.contatos);
 }
 
+-(Contato*)buscaContatoDaPosicao:(NSInteger)posicao{
+    return self.contatos[posicao];
+}
+
 @end
