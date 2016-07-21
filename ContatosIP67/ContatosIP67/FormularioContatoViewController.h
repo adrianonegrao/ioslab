@@ -19,6 +19,7 @@
 @property IBOutlet UITextField* site;
 
 @property ContatoDAO* contatoDAO;
+@property (strong) Contato* contato;
 
 @end
 

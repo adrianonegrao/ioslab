@@ -15,19 +15,35 @@
     self = [super initWithCoder:coder];
     if(self){
         self.contatoDAO = [ContatoDAO pegaInstancia];
+        
+        self.navigationItem.title = @"Cadastro";
+        
+        UIBarButtonItem* botao = [[UIBarButtonItem alloc]
+                                  initWithTitle:@"Adiciona"
+                                  style:UIBarButtonItemStylePlain
+                                  target:self
+                                  action:@selector(adicionaContato)];
+        
+        self.navigationItem.rightBarButtonItem = botao;
+        
     }
     return self;
 }
 
--(IBAction)pegaDadosDoFormulario{
-    Contato* contato = [Contato new];
-    contato.nome = [self.nome text];
-    contato.telefone = [self.telefone text];
-    contato.endereco = [self.endereco text];
-    contato.email = [self.email text];
-    contato.site = [self.site text];
+-(void) adicionaContato{
+    [self pegaDadosDoFormulario];
+    [self.contatoDAO adiciona:self.contato];
     
-    [self.contatoDAO adiciona:contato];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(void)pegaDadosDoFormulario{
+    self.contato = [Contato new];
+    self.contato.nome = [self.nome text];
+    self.contato.telefone = [self.telefone text];
+    self.contato.endereco = [self.endereco text];
+    self.contato.email = [self.email text];
+    self.contato.site = [self.site text];
 }
 
 @end
