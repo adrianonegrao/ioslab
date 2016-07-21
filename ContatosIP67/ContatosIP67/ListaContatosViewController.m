@@ -20,6 +20,7 @@
                                      action:@selector(exibeFormulario) ];
         
         self.navigationItem.rightBarButtonItem = botaoAdd;
+        self.navigationItem.leftBarButtonItem = self.editButtonItem;
         
         self.dao = [ContatoDAO pegaInstancia];
     }
@@ -64,6 +65,16 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [self.tableView reloadData];
+}
+
+-(void)tableView:(UITableView*)table
+        commitEditingStyle:(UITableViewCellEditingStyle) editingStyle
+        forRowAtIndexPath: (NSIndexPath*) indexPath{
+    
+    if(editingStyle == UITableViewCellEditingStyleDelete){
+        [self.dao removeContatoDaPosicao:indexPath.row];
+        [table deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
 }
 
 

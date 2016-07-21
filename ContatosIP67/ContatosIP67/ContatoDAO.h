@@ -19,5 +19,7 @@
 
 -(Contato*)buscaContatoDaPosicao:(NSInteger)posicao;
 
+-(void)removeContatoDaPosicao:(NSInteger) posicao;
+
 
 @end
