@@ -47,7 +47,7 @@
 //O TableView usa as informacoes acima para montar a lista, por isso nao precisa do "for"
 -(UITableViewCell*)tableView:(UITableView *)table cellForRowAtIndexPath:(NSIndexPath *)index{
     
-    static NSString* cellIdentififier = @"Cell";
+    static NSString* cellIdentififier = @"linha";
   
     UITableViewCell* cell = [table dequeueReusableCellWithIdentifier:cellIdentififier];
     if(!cell){
