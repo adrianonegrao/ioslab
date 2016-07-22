@@ -13,11 +13,22 @@
 		B17869FB1D3FDC23004E3358 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B17869F91D3FDC23004E3358 /* Main.storyboard */; };
 		B17869FE1D3FDC23004E3358 /* ContatosIP67.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B17869FC1D3FDC23004E3358 /* ContatosIP67.xcdatamodeld */; };
 		B1786A001D3FDC23004E3358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B17869FF1D3FDC23004E3358 /* Assets.xcassets */; };
-		B1786A031D3FDC23004E3358 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1786A011D3FDC23004E3358 /* LaunchScreen.storyboard */; };
 		B1786A0C1D4027EA004E3358 /* ContatoDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = B1786A0B1D4027EA004E3358 /* ContatoDAO.m */; };
 		B1786A0F1D4027FA004E3358 /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = B1786A0E1D4027FA004E3358 /* Contato.m */; };
 		B1786A121D402C58004E3358 /* ListaContatosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1786A111D402C58004E3358 /* ListaContatosViewController.m */; };
+		B1786A1D1D42B3DE004E3358 /* ContatosIP67Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1786A1C1D42B3DE004E3358 /* ContatosIP67Tests.m */; };
+		B1786A251D42B57F004E3358 /* ContatoDAOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1786A241D42B57F004E3358 /* ContatoDAOTest.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1786A1F1D42B3DE004E3358 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B17869E51D3FDC22004E3358 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B17869EC1D3FDC22004E3358;
+			remoteInfo = ContatosIP67;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B17869ED1D3FDC22004E3358 /* ContatosIP67.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContatosIP67.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,7 +40,6 @@
 		B17869FA1D3FDC23004E3358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B17869FD1D3FDC23004E3358 /* ContatosIP67.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContatosIP67.xcdatamodel; sourceTree = "<group>"; };
 		B17869FF1D3FDC23004E3358 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B1786A021D3FDC23004E3358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1786A041D3FDC23004E3358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1786A0A1D4027EA004E3358 /* ContatoDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContatoDAO.h; sourceTree = "<group>"; };
 		B1786A0B1D4027EA004E3358 /* ContatoDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContatoDAO.m; sourceTree = "<group>"; };
@@ -37,10 +47,21 @@
 		B1786A0E1D4027FA004E3358 /* Contato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contato.m; sourceTree = "<group>"; };
 		B1786A101D402C58004E3358 /* ListaContatosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaContatosViewController.h; sourceTree = "<group>"; };
 		B1786A111D402C58004E3358 /* ListaContatosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaContatosViewController.m; sourceTree = "<group>"; };
+		B1786A1A1D42B3DE004E3358 /* ContatosIP67Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContatosIP67Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1786A1C1D42B3DE004E3358 /* ContatosIP67Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContatosIP67Tests.m; sourceTree = "<group>"; };
+		B1786A1E1D42B3DE004E3358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1786A241D42B57F004E3358 /* ContatoDAOTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContatoDAOTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B17869EA1D3FDC22004E3358 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1786A171D42B3DE004E3358 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -54,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				B17869EF1D3FDC22004E3358 /* ContatosIP67 */,
+				B1786A1B1D42B3DE004E3358 /* ContatosIP67Tests */,
 				B17869EE1D3FDC22004E3358 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				B17869ED1D3FDC22004E3358 /* ContatosIP67.app */,
+				B1786A1A1D42B3DE004E3358 /* ContatosIP67Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,12 +100,8 @@
 				B1786A0A1D4027EA004E3358 /* ContatoDAO.h */,
 				B1786A0B1D4027EA004E3358 /* ContatoDAO.m */,
 				B17869FC1D3FDC23004E3358 /* ContatosIP67.xcdatamodeld */,
-				B17869F61D3FDC23004E3358 /* FormularioContatoViewController.h */,
-				B17869F71D3FDC23004E3358 /* FormularioContatoViewController.m */,
+				B1786A151D42AFC3004E3358 /* ViewController */,
 				B1786A041D3FDC23004E3358 /* Info.plist */,
-				B1786A011D3FDC23004E3358 /* LaunchScreen.storyboard */,
-				B1786A101D402C58004E3358 /* ListaContatosViewController.h */,
-				B1786A111D402C58004E3358 /* ListaContatosViewController.m */,
 				B17869F91D3FDC23004E3358 /* Main.storyboard */,
 				B17869F01D3FDC22004E3358 /* Supporting Files */,
 			);
@@ -95,6 +114,27 @@
 				B17869F11D3FDC23004E3358 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1786A151D42AFC3004E3358 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B17869F61D3FDC23004E3358 /* FormularioContatoViewController.h */,
+				B17869F71D3FDC23004E3358 /* FormularioContatoViewController.m */,
+				B1786A101D402C58004E3358 /* ListaContatosViewController.h */,
+				B1786A111D402C58004E3358 /* ListaContatosViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		B1786A1B1D42B3DE004E3358 /* ContatosIP67Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B1786A1C1D42B3DE004E3358 /* ContatosIP67Tests.m */,
+				B1786A1E1D42B3DE004E3358 /* Info.plist */,
+				B1786A241D42B57F004E3358 /* ContatoDAOTest.m */,
+			);
+			path = ContatosIP67Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +157,24 @@
 			productReference = B17869ED1D3FDC22004E3358 /* ContatosIP67.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B1786A191D42B3DE004E3358 /* ContatosIP67Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1786A211D42B3DE004E3358 /* Build configuration list for PBXNativeTarget "ContatosIP67Tests" */;
+			buildPhases = (
+				B1786A161D42B3DE004E3358 /* Sources */,
+				B1786A171D42B3DE004E3358 /* Frameworks */,
+				B1786A181D42B3DE004E3358 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1786A201D42B3DE004E3358 /* PBXTargetDependency */,
+			);
+			name = ContatosIP67Tests;
+			productName = ContatosIP67Tests;
+			productReference = B1786A1A1D42B3DE004E3358 /* ContatosIP67Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -129,6 +187,10 @@
 					B17869EC1D3FDC22004E3358 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 7BK887X933;
+					};
+					B1786A191D42B3DE004E3358 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = B17869EC1D3FDC22004E3358;
 					};
 				};
 			};
@@ -146,6 +208,7 @@
 			projectRoot = "";
 			targets = (
 				B17869EC1D3FDC22004E3358 /* ContatosIP67 */,
+				B1786A191D42B3DE004E3358 /* ContatosIP67Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -155,9 +218,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1786A031D3FDC23004E3358 /* LaunchScreen.storyboard in Resources */,
 				B1786A001D3FDC23004E3358 /* Assets.xcassets in Resources */,
 				B17869FB1D3FDC23004E3358 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1786A181D42B3DE004E3358 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +247,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B1786A161D42B3DE004E3358 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1786A1D1D42B3DE004E3358 /* ContatosIP67Tests.m in Sources */,
+				B1786A251D42B57F004E3358 /* ContatoDAOTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1786A201D42B3DE004E3358 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B17869EC1D3FDC22004E3358 /* ContatosIP67 */;
+			targetProxy = B1786A1F1D42B3DE004E3358 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B17869F91D3FDC23004E3358 /* Main.storyboard */ = {
@@ -187,14 +273,6 @@
 				B17869FA1D3FDC23004E3358 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B1786A011D3FDC23004E3358 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B1786A021D3FDC23004E3358 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -306,6 +384,30 @@
 			};
 			name = Release;
 		};
+		B1786A221D42B3DE004E3358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ContatosIP67Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.caelum.ContatosIP67Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContatosIP67.app/ContatosIP67";
+			};
+			name = Debug;
+		};
+		B1786A231D42B3DE004E3358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ContatosIP67Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.caelum.ContatosIP67Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContatosIP67.app/ContatosIP67";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -323,6 +425,14 @@
 			buildConfigurations = (
 				B1786A081D3FDC23004E3358 /* Debug */,
 				B1786A091D3FDC23004E3358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B1786A211D42B3DE004E3358 /* Build configuration list for PBXNativeTarget "ContatosIP67Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1786A221D42B3DE004E3358 /* Debug */,
+				B1786A231D42B3DE004E3358 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

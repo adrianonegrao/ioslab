@@ -11,7 +11,7 @@
 #import "FormularioContatoViewController.h"
 #import "ContatoDAO.h"
 
-@interface ListaContatosViewController : UITableViewController
+@interface ListaContatosViewController : UITableViewController<FormularioContatoViewControllerDelegate>
 
 @property ContatoDAO* dao;
 

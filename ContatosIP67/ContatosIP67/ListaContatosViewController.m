@@ -27,15 +27,8 @@
     return self;
 }
 
--(void)exibeFormulario{
-    UIStoryboard* board = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    FormularioContatoViewController* form = [board instantiateViewControllerWithIdentifier:@"Form-Contato"];
-    
-    if(self.contatoSelecionado){
-        form.contato = self.contatoSelecionado;
-    }
-    
-    [self.navigationController pushViewController:form animated:YES];
+-(void)viewWillAppear:(BOOL)animated{
+    [self.tableView reloadData];
 }
 
 //Quantidade de Sections
@@ -67,9 +60,6 @@
     return cell;
 }
 
--(void)viewWillAppear:(BOOL)animated{
-    [self.tableView reloadData];
-}
 
 -(void)tableView:(UITableView*)table
         commitEditingStyle:(UITableViewCellEditingStyle) editingStyle
@@ -87,7 +77,25 @@
     self.contatoSelecionado = nil;
 }
 
+-(void)contatoAtualizado:(Contato *)contato{
+    NSLog(@"Contato atualizado: %@", contato.nome);
+}
 
+-(void)contatoAdicionado:(Contato *)contato{
+    NSLog(@"Contato adicionado: %@", contato.nome);
+}
 
+-(void)exibeFormulario{
+    UIStoryboard* board = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    FormularioContatoViewController* form = [board instantiateViewControllerWithIdentifier:@"Form-Contato"];
+    
+    form.delegate = self;
+    
+    if(self.contatoSelecionado){
+        form.contato = self.contatoSelecionado;
+    }
+    
+    [self.navigationController pushViewController:form animated:YES];
+}
  
 @end
