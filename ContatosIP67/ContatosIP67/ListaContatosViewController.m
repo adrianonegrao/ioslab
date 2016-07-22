@@ -31,6 +31,10 @@
     UIStoryboard* board = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     FormularioContatoViewController* form = [board instantiateViewControllerWithIdentifier:@"Form-Contato"];
     
+    if(self.contatoSelecionado){
+        form.contato = self.contatoSelecionado;
+    }
+    
     [self.navigationController pushViewController:form animated:YES];
 }
 
@@ -79,8 +83,8 @@
 
 -(void)tableView:(UITableView*)table didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     self.contatoSelecionado = [self.dao buscaContatoDaPosicao:indexPath.row];
-    NSLog(@"Nome: %@", self.contatoSelecionado.nome);
-                               
+    [self exibeFormulario];
+    self.contatoSelecionado = nil;
 }
 
 

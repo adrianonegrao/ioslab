@@ -11,6 +11,7 @@
 
 @implementation FormularioContatoViewController
 
+//Inicializador so quando StoryBoard instancia este controller
 -(NSObject*) initWithCoder:(NSCoder*) coder{
     self = [super initWithCoder:coder];
     if(self){
@@ -44,6 +45,16 @@
     self.contato.endereco = [self.endereco text];
     self.contato.email = [self.email text];
     self.contato.site = [self.site text];
+}
+
+-(void)viewDidLoad{
+    if(self.contato){
+        self.nome.text = self.contato.nome;
+        self.telefone.text = self.contato.telefone;
+        self.email.text = self.contato.email;
+        self.endereco.text = self.contato.endereco;
+        self.site.text = self.contato.site;
+    }
 }
 
 @end
