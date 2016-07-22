@@ -15,4 +15,6 @@
 
 @property ContatoDAO* dao;
 
+@property Contato* contatoSelecionado;
+
 @end

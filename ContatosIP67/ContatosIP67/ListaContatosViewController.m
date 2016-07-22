@@ -77,6 +77,13 @@
     }
 }
 
+-(void)tableView:(UITableView*)table didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    self.contatoSelecionado = [self.dao buscaContatoDaPosicao:indexPath.row];
+    NSLog(@"Nome: %@", self.contatoSelecionado.nome);
+                               
+}
+
+
 
  
 @end
