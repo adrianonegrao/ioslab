@@ -23,12 +23,21 @@
         self.navigationItem.leftBarButtonItem = self.editButtonItem;
         
         self.dao = [ContatoDAO pegaInstancia];
+        self.linhaDestaque = -1;
     }
     return self;
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [self.tableView reloadData];
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    if(self.linhaDestaque >= 0){
+        NSIndexPath* indexPath = [NSIndexPath indexPathForRow:self.linhaDestaque inSection:0];
+        [self.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
+        self.linhaDestaque = -1;
+    }
 }
 
 //Quantidade de Sections
@@ -78,11 +87,11 @@
 }
 
 -(void)contatoAtualizado:(Contato *)contato{
-    NSLog(@"Contato atualizado: %@", contato.nome);
+    self.linhaDestaque = [self.dao buscarPosicaoDoContato:contato];
 }
 
 -(void)contatoAdicionado:(Contato *)contato{
-    NSLog(@"Contato adicionado: %@", contato.nome);
+    self.linhaDestaque = [self.dao buscarPosicaoDoContato:contato];
 }
 
 -(void)exibeFormulario{

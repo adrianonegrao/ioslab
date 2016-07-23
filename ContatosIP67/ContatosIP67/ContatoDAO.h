@@ -21,5 +21,8 @@
 
 -(void)removeContatoDaPosicao:(NSInteger) posicao;
 
+-(NSInteger)buscarPosicaoDoContato:(Contato*)contato;
+
+
 
 @end

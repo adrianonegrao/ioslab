@@ -17,4 +17,6 @@
 
 @property Contato* contatoSelecionado;
 
+@property NSInteger linhaDestaque;
+
 @end
