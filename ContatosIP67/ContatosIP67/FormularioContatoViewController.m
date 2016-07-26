@@ -47,6 +47,10 @@
         self.email.text = self.contato.email;
         self.endereco.text = self.contato.endereco;
         self.site.text = self.contato.site;
+        if(self.contato.foto) {
+            [self.botaoFoto setBackgroundImage:self.contato.foto forState:UIControlStateNormal];
+            [self.botaoFoto setTitle:nil forState:UIControlStateNormal];
+        }
     }
 }
 
@@ -71,6 +75,10 @@
     self.contato.endereco = [self.endereco text];
     self.contato.email = [self.email text];
     self.contato.site = [self.site text];
+    
+    if([self.botaoFoto backgroundImageForState:UIControlStateNormal]) {
+        self.contato.foto = [self.botaoFoto backgroundImageForState:UIControlStateNormal];
+    }
 }
 
 
