@@ -84,4 +84,24 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+-(IBAction)selecionaFoto:(id)sender{
+    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        //camera disponivel
+    }else{
+        UIImagePickerController*  picker = [UIImagePickerController new];
+        picker.sourceType= UIImagePickerControllerSourceTypePhotoLibrary;
+        picker.allowsEditing = YES;
+        picker.delegate = self;
+        [self presentViewController:picker animated:YES completion:nil];
+    }
+}
+
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
+    UIImage* imagemSelecionada = [info valueForKey:UIImagePickerControllerEditedImage];
+    
+    [self.botaoFoto setBackgroundImage:imagemSelecionada forState:UIControlStateNormal];
+    [self.botaoFoto setTitle:nil forState:UIControlStateNormal];
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end

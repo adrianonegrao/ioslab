@@ -17,7 +17,7 @@
 
 @end
 
-@interface FormularioContatoViewController : UIViewController
+@interface FormularioContatoViewController : UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @property IBOutlet UITextField* nome;
 @property IBOutlet UITextField* telefone;
@@ -29,5 +29,10 @@
 @property (strong) Contato* contato;
 
 @property (weak) id<FormularioContatoViewControllerDelegate> delegate;
+
+@property IBOutlet UIButton* botaoFoto;
+
+-(IBAction)selecionaFoto:(id)sender;
+
 
 @end
