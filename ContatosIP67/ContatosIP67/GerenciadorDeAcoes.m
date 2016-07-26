@@ -63,7 +63,28 @@
 }
 
 -(void) enviarEmail{
-    
+    if( [MFMailComposeViewController canSendMail] ){
+        MFMailComposeViewController* enviadorEmail = [MFMailComposeViewController new];
+        enviadorEmail.mailComposeDelegate = self;
+        
+        [enviadorEmail setToRecipients:@[self.contato.email]];
+        [enviadorEmail setSubject:@"Caelum"];
+        
+        [self.controller presentViewController:enviadorEmail animated:YES completion:nil];
+    }else{
+        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Oops!"
+                                                        message:@"Não é possível enviar email"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
+}
+
+-(void)mailComposeController:(MFMailComposeViewController *)controller
+         didFinishWithResult:(MFMailComposeResult)result
+                       error:(NSError *)error{
+    [self.controller dismissViewControllerAnimated:YES completion:nil];
 }
 
 -(void) abrirSite{

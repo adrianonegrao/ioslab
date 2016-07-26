@@ -19,6 +19,7 @@
 		B1786A1D1D42B3DE004E3358 /* ContatosIP67Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1786A1C1D42B3DE004E3358 /* ContatosIP67Tests.m */; };
 		B1786A251D42B57F004E3358 /* ContatoDAOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1786A241D42B57F004E3358 /* ContatoDAOTest.m */; };
 		B1AAAAC91D46C89D00DBC68C /* GerenciadorDeAcoes.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AAAAC81D46C89D00DBC68C /* GerenciadorDeAcoes.m */; };
+		B1AAAACB1D46EEA300DBC68C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1AAAACA1D46EEA300DBC68C /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		B1786A241D42B57F004E3358 /* ContatoDAOTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContatoDAOTest.m; sourceTree = "<group>"; };
 		B1AAAAC71D46C89D00DBC68C /* GerenciadorDeAcoes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GerenciadorDeAcoes.h; sourceTree = "<group>"; };
 		B1AAAAC81D46C89D00DBC68C /* GerenciadorDeAcoes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GerenciadorDeAcoes.m; sourceTree = "<group>"; };
+		B1AAAACA1D46EEA300DBC68C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1AAAACB1D46EEA300DBC68C /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		B17869E41D3FDC22004E3358 = {
 			isa = PBXGroup;
 			children = (
+				B1AAAACA1D46EEA300DBC68C /* MessageUI.framework */,
 				B17869EF1D3FDC22004E3358 /* ContatosIP67 */,
 				B1786A1B1D42B3DE004E3358 /* ContatosIP67Tests */,
 				B17869EE1D3FDC22004E3358 /* Products */,
