@@ -30,7 +30,58 @@
 }
 
 -(void)actionSheet:(UIActionSheet*) actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+    switch (buttonIndex) {
+        case 0:
+            [self ligar];
+            break;
+        case 1:
+            [self enviarEmail];
+            break;
+        case 2:
+            [self abrirSite];
+            break;
+        case 3:
+            [self mostrarMapa];
+            break;
+        default:
+            break;
+    }
+}
+
+-(void) ligar{
+    UIDevice* device = [UIDevice currentDevice];
+    if([device.model isEqualToString:@"iPhone"]){
+        NSString* numero = [NSString stringWithFormat:@"tel:%@", self.contato.telefone];
+        [self abrirAplicativoComURL:numero];
+    }else{
+        [[[UIAlertView alloc] initWithTitle:@"Impossivel fazer ligação"
+                            message:@"Seu dispositivo não é um iPhone"
+                            delegate:nil
+                          cancelButtonTitle:@"Ok"
+                          otherButtonTitles:nil, nil] show];
+    }
+}
+
+-(void) enviarEmail{
     
+}
+
+-(void) abrirSite{
+    NSString* url = self.contato.site;
+    if(![url hasPrefix:@"http://"]){
+        url = [NSString stringWithFormat:@"http://%@", url];
+    }
+    [self abrirAplicativoComURL:url];
+}
+
+-(void) mostrarMapa{
+    NSString* url = [[NSString stringWithFormat:@"http://maps.google.com/maps?q=%@", self.contato.endereco]
+                     stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    [self abrirAplicativoComURL:url];
+}
+
+-(void) abrirAplicativoComURL:(NSString*) url{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
 }
 
 @end

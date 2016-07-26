@@ -28,7 +28,7 @@
     return self;
 }
 
--(void)viewDidiLoad{
+-(void)viewDidLoad{
     [super viewDidLoad];
     UILongPressGestureRecognizer* longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(exibeMaisAcoes:)];
     [self.tableView addGestureRecognizer:longPress];
