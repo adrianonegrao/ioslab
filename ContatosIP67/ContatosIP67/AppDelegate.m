@@ -26,11 +26,12 @@
     
     UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:lista];
     
-    self.window.rootViewController = nav;
+    ContatosNoMapaViewController* contatosNoMapa = [ContatosNoMapaViewController new];
     
+    UITabBarController* tabBarController = [UITabBarController new];
+    tabBarController.viewControllers = @[nav, contatosNoMapa];
     
-    
-    
+    self.window.rootViewController = tabBarController;
     
     return YES;
 }

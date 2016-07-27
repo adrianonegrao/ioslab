@@ -20,6 +20,9 @@
 		B1786A251D42B57F004E3358 /* ContatoDAOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1786A241D42B57F004E3358 /* ContatoDAOTest.m */; };
 		B1AAAAC91D46C89D00DBC68C /* GerenciadorDeAcoes.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AAAAC81D46C89D00DBC68C /* GerenciadorDeAcoes.m */; };
 		B1AAAACB1D46EEA300DBC68C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1AAAACA1D46EEA300DBC68C /* MessageUI.framework */; };
+		B1AAAACF1D48412A00DBC68C /* ContatosNoMapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AAAACD1D48412A00DBC68C /* ContatosNoMapaViewController.m */; };
+		B1AAAAD01D48412A00DBC68C /* ContatosNoMapaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1AAAACE1D48412A00DBC68C /* ContatosNoMapaViewController.xib */; };
+		B1AAAAD21D48420700DBC68C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1AAAAD11D48420700DBC68C /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,10 @@
 		B1AAAAC71D46C89D00DBC68C /* GerenciadorDeAcoes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GerenciadorDeAcoes.h; sourceTree = "<group>"; };
 		B1AAAAC81D46C89D00DBC68C /* GerenciadorDeAcoes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GerenciadorDeAcoes.m; sourceTree = "<group>"; };
 		B1AAAACA1D46EEA300DBC68C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		B1AAAACC1D48412A00DBC68C /* ContatosNoMapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContatosNoMapaViewController.h; sourceTree = "<group>"; };
+		B1AAAACD1D48412A00DBC68C /* ContatosNoMapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContatosNoMapaViewController.m; sourceTree = "<group>"; };
+		B1AAAACE1D48412A00DBC68C /* ContatosNoMapaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContatosNoMapaViewController.xib; sourceTree = "<group>"; };
+		B1AAAAD11D48420700DBC68C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1AAAAD21D48420700DBC68C /* MapKit.framework in Frameworks */,
 				B1AAAACB1D46EEA300DBC68C /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +88,7 @@
 		B17869E41D3FDC22004E3358 = {
 			isa = PBXGroup;
 			children = (
+				B1AAAAD11D48420700DBC68C /* MapKit.framework */,
 				B1AAAACA1D46EEA300DBC68C /* MessageUI.framework */,
 				B17869EF1D3FDC22004E3358 /* ContatosIP67 */,
 				B1786A1B1D42B3DE004E3358 /* ContatosIP67Tests */,
@@ -113,6 +122,9 @@
 				B17869F01D3FDC22004E3358 /* Supporting Files */,
 				B1AAAAC71D46C89D00DBC68C /* GerenciadorDeAcoes.h */,
 				B1AAAAC81D46C89D00DBC68C /* GerenciadorDeAcoes.m */,
+				B1AAAACC1D48412A00DBC68C /* ContatosNoMapaViewController.h */,
+				B1AAAACD1D48412A00DBC68C /* ContatosNoMapaViewController.m */,
+				B1AAAACE1D48412A00DBC68C /* ContatosNoMapaViewController.xib */,
 			);
 			path = ContatosIP67;
 			sourceTree = "<group>";
@@ -228,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1786A001D3FDC23004E3358 /* Assets.xcassets in Resources */,
+				B1AAAAD01D48412A00DBC68C /* ContatosNoMapaViewController.xib in Resources */,
 				B17869FB1D3FDC23004E3358 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +261,7 @@
 			files = (
 				B1786A0C1D4027EA004E3358 /* ContatoDAO.m in Sources */,
 				B17869F81D3FDC23004E3358 /* FormularioContatoViewController.m in Sources */,
+				B1AAAACF1D48412A00DBC68C /* ContatosNoMapaViewController.m in Sources */,
 				B1786A121D402C58004E3358 /* ListaContatosViewController.m in Sources */,
 				B17869F51D3FDC23004E3358 /* AppDelegate.m in Sources */,
 				B17869FE1D3FDC23004E3358 /* ContatosIP67.xcdatamodeld in Sources */,
