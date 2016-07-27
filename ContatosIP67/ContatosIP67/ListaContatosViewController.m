@@ -24,6 +24,12 @@
         
         self.dao = [ContatoDAO pegaInstancia];
         self.linhaDestaque = -1;
+        
+        UIImage* imagemTabItem = [UIImage imageNamed:@"lista-contatos.png"];
+        
+        UITabBarItem* tabItem = [[UITabBarItem alloc] initWithTitle:@"Contatos" image:imagemTabItem tag:0];
+        self.tabBarItem = tabItem;
+        self.navigationItem.title = @"Contatos";
     }
     return self;
 }
