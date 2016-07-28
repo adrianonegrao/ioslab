@@ -23,6 +23,7 @@
 		B1AAAACF1D48412A00DBC68C /* ContatosNoMapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AAAACD1D48412A00DBC68C /* ContatosNoMapaViewController.m */; };
 		B1AAAAD01D48412A00DBC68C /* ContatosNoMapaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1AAAACE1D48412A00DBC68C /* ContatosNoMapaViewController.xib */; };
 		B1AAAAD21D48420700DBC68C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1AAAAD11D48420700DBC68C /* MapKit.framework */; };
+		B1AAAAD51D49986500DBC68C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1AAAAD41D49986500DBC68C /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		B1AAAACE1D48412A00DBC68C /* ContatosNoMapaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContatosNoMapaViewController.xib; sourceTree = "<group>"; };
 		B1AAAAD11D48420700DBC68C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B1AAAAD31D49860A00DBC68C /* VilaMariana.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = VilaMariana.gpx; sourceTree = "<group>"; };
+		B1AAAAD41D49986500DBC68C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1AAAAD51D49986500DBC68C /* CoreLocation.framework in Frameworks */,
 				B1AAAAD21D48420700DBC68C /* MapKit.framework in Frameworks */,
 				B1AAAACB1D46EEA300DBC68C /* MessageUI.framework in Frameworks */,
 			);
@@ -89,6 +92,7 @@
 		B17869E41D3FDC22004E3358 = {
 			isa = PBXGroup;
 			children = (
+				B1AAAAD41D49986500DBC68C /* CoreLocation.framework */,
 				B1AAAAD11D48420700DBC68C /* MapKit.framework */,
 				B1AAAACA1D46EEA300DBC68C /* MessageUI.framework */,
 				B17869EF1D3FDC22004E3358 /* ContatosIP67 */,
