@@ -141,7 +141,10 @@
     [self presentViewController:picker animated:YES completion:nil];
 }
 
--(IBAction)buscarCoordenadas:(id)sender{
+-(IBAction)buscarCoordenadas:(UIButton*)botao{
+    [self.loading startAnimating];
+    botao.hidden = YES;
+    
     CLGeocoder* geocoder = [CLGeocoder new];
     [geocoder geocodeAddressString: self.endereco.text
                  completionHandler:
@@ -153,6 +156,9 @@
              self.campoLatitude.text = [NSString stringWithFormat:@"%f", coordenada.latitude];
              self.campoLongitude.text = [NSString stringWithFormat:@"%f", coordenada.longitude];
          }
+         
+         [self.loading stopAnimating];
+         botao.hidden = NO;
      }];
 }
 

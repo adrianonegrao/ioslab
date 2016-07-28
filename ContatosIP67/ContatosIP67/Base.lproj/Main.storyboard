@@ -78,6 +78,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgL-p3-o8v">
+                                <rect key="frame" x="226" y="77" width="120" height="102"/>
+                                <state key="normal" title="Foto"/>
+                                <connections>
+                                    <action selector="selecionaFoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ol-mE-uim"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zA8-R1-Uro">
                                 <rect key="frame" x="20" y="170" width="46" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -85,7 +92,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjP-qX-g86">
-                                <rect key="frame" x="302" y="534" width="35" height="38"/>
+                                <rect key="frame" x="300" y="534" width="35" height="38"/>
                                 <state key="normal" title="Button" image="gps"/>
                                 <connections>
                                     <action selector="buscarCoordenadas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XVx-mP-orA"/>
@@ -101,13 +108,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgL-p3-o8v">
-                                <rect key="frame" x="226" y="77" width="120" height="102"/>
-                                <state key="normal" title="Foto"/>
-                                <connections>
-                                    <action selector="selecionaFoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ol-mE-uim"/>
-                                </connections>
-                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="roE-3f-akg">
+                                <rect key="frame" x="307" y="543" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -118,6 +121,7 @@
                         <outlet property="campoLongitude" destination="K8T-ah-3vJ" id="tXc-pl-P21"/>
                         <outlet property="email" destination="H2K-MD-Y0J" id="08L-pl-WwP"/>
                         <outlet property="endereco" destination="W7f-e8-RuK" id="OVB-ei-WXO"/>
+                        <outlet property="loading" destination="roE-3f-akg" id="tZw-rf-7ZT"/>
                         <outlet property="nome" destination="DMh-Mc-dmD" id="tg1-H6-f3r"/>
                         <outlet property="site" destination="WhR-70-lVk" id="cqv-o0-zv9"/>
                         <outlet property="telefone" destination="KSo-OE-JRp" id="UnA-Pg-w08"/>

@@ -38,6 +38,8 @@
 @property IBOutlet UITextField* campoLatitude;
 @property IBOutlet UITextField* campoLongitude;
 
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView* loading;
+
 
 
 @end
