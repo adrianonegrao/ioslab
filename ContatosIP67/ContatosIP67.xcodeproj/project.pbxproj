@@ -63,6 +63,7 @@
 		B1AAAACD1D48412A00DBC68C /* ContatosNoMapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContatosNoMapaViewController.m; sourceTree = "<group>"; };
 		B1AAAACE1D48412A00DBC68C /* ContatosNoMapaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContatosNoMapaViewController.xib; sourceTree = "<group>"; };
 		B1AAAAD11D48420700DBC68C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B1AAAAD31D49860A00DBC68C /* VilaMariana.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = VilaMariana.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +126,7 @@
 				B1AAAACC1D48412A00DBC68C /* ContatosNoMapaViewController.h */,
 				B1AAAACD1D48412A00DBC68C /* ContatosNoMapaViewController.m */,
 				B1AAAACE1D48412A00DBC68C /* ContatosNoMapaViewController.xib */,
+				B1AAAAD31D49860A00DBC68C /* VilaMariana.gpx */,
 			);
 			path = ContatosIP67;
 			sourceTree = "<group>";
