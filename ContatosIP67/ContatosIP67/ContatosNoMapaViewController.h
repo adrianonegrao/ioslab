@@ -13,5 +13,6 @@
 
 @property IBOutlet MKMapView* mapa;
 @property CLLocationManager* manager;
+@property (nonatomic, weak) NSMutableArray* contatos;
 
 @end

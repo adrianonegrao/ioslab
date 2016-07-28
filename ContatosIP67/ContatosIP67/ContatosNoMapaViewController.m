@@ -7,6 +7,7 @@
 //
 
 #import "ContatosNoMapaViewController.h"
+#import "ContatoDAO.h"
 
 @interface ContatosNoMapaViewController ()
 
@@ -21,6 +22,9 @@
         UITabBarItem* tabItem = [[UITabBarItem alloc] initWithTitle:@"Mapa" image:imagemTabItem tag:0];
         self.navigationItem.title = @"Localização";
         self.tabBarItem = tabItem;
+        
+        ContatoDAO* dao = [ContatoDAO pegaInstancia];
+        self.contatos = dao.contatos;
     }
     return self;
 }
@@ -33,6 +37,14 @@
     
     self.manager = [CLLocationManager new];
     [self.manager requestWhenInUseAuthorization];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [self.mapa addAnnotations:self.contatos];
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [self.mapa removeAnnotations:self.contatos];
 }
 
 - (void)didReceiveMemoryWarning {
