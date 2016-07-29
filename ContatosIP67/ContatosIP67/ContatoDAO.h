@@ -8,10 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "Contato.h"
+#import "CoreDataInfra.h"
 
 @interface ContatoDAO : NSObject
 
 @property (strong) NSMutableArray<Contato*>* contatos;
+@property (strong) CoreDataInfra* coreData;
+
 
 +(ContatoDAO*) pegaInstancia;
 
@@ -23,6 +26,8 @@
 
 -(NSInteger)buscarPosicaoDoContato:(Contato*)contato;
 
+-(Contato*)criaNovoContato;
 
+-(void)salva;
 
 @end

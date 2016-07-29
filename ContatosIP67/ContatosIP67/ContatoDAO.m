@@ -16,6 +16,10 @@ static ContatoDAO* instancia;
     self = [super init];
     if(self != nil){
         self.contatos = [NSMutableArray new];
+        
+        self.coreData = [CoreDataInfra new];
+        
+        
     }
     return self;
 }
@@ -42,6 +46,14 @@ static ContatoDAO* instancia;
 
 -(NSInteger)buscarPosicaoDoContato:(Contato *)contato{
     return [self.contatos indexOfObject:contato];
+}
+
+-(Contato*)criaNovoContato{
+    return [NSEntityDescription insertNewObjectForEntityForName:@"Contato" inManagedObjectContext:self.coreData.managedObjectContext];
+}
+
+-(void)salva{
+    [self.coreData saveContext];
 }
 
 @end

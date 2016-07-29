@@ -64,13 +64,14 @@
     if(self.delegate){
         [self.delegate contatoAdicionado:self.contato];
     }
-    
+    [self.contatoDAO salva];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
 -(void)pegaDadosDoFormulario{
     if(!self.contato){
-        self.contato = [Contato new];
+       // self.contato = [Contato new];
+        self.contato = [self.contatoDAO criaNovoContato];
     }
     self.contato.nome = [self.nome text];
     self.contato.telefone = [self.telefone text];
