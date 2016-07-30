@@ -38,6 +38,8 @@
     [super viewDidLoad];
     UILongPressGestureRecognizer* longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(exibeMaisAcoes:)];
     [self.tableView addGestureRecognizer:longPress];
+    
+    [self.dao listaContatos];
 }
 
 -(void)viewWillAppear:(BOOL)animated{

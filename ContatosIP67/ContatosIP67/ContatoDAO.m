@@ -56,4 +56,13 @@ static ContatoDAO* instancia;
     [self.coreData saveContext];
 }
 
+-(void)listaContatos{
+    NSFetchRequest* query = [NSFetchRequest fetchRequestWithEntityName:@"Contato"];
+    NSSortDescriptor* ordemAlfabetica = [NSSortDescriptor sortDescriptorWithKey:@"nome" ascending:YES];
+    query.sortDescriptors = @[ordemAlfabetica];
+    NSArray* retorno = [self.coreData.managedObjectContext executeFetchRequest:query
+                                                      error:nil];
+    self.contatos = [retorno mutableCopy];
+}
+
 @end

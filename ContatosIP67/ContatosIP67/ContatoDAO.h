@@ -30,4 +30,6 @@
 
 -(void)salva;
 
+-(void)listaContatos;
+
 @end
