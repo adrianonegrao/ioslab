@@ -7,6 +7,7 @@
 //
 
 #import "FormularioContatoViewController.h"
+#import "AFNetworking.h"
 
 
 @implementation FormularioContatoViewController
@@ -161,6 +162,46 @@
          [self.loading stopAnimating];
          botao.hidden = NO;
      }];
+}
+
+-(IBAction)acessoWebService{
+    
+    AFHTTPSessionManager* manager = [AFHTTPSessionManager manager];
+    manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+    
+    NSURL* url = [NSURL URLWithString:@"https://www.caelum.com.br/mobile"];
+    
+    NSDictionary* parametros =
+    @{@"list": @[
+              @{@"aluno":
+                    @[
+                        @{@"nome": @"Felipe",
+                          @"nota":@10},
+                        @{@"nome": @"Felipe",
+                          @"nota":@5}
+                        ]
+                }
+              ]
+      };
+    
+    [manager POST:url.absoluteString
+       parameters:parametros
+         progress:nil
+          success:
+     ^(NSURLSessionTask* operation, id responseObject){
+         NSLog(@"JSON: %@", responseObject);
+     }
+          failure:
+     ^(NSURLSessionTask* operation, NSError* error){
+         NSLog(@"Error: %@", error);
+     }
+     
+     ];
+    
+    //Blocos lidam com a resposta pq nao sabemos o tempo de retorno
+    
+    
 }
 
 @end

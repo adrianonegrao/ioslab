@@ -6,6 +6,7 @@ target 'ContatosIP67' do
   # use_frameworks!
 
 pod "TPKeyboardAvoiding"
+pod "AFNetworking"
 
   # Pods for ContatosIP67
 

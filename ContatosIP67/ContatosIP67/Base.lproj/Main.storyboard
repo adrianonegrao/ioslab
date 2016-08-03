@@ -111,6 +111,13 @@
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="roE-3f-akg">
                                 <rect key="frame" x="307" y="543" width="20" height="20"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dR-U8-0jQ">
+                                <rect key="frame" x="32" y="113" width="135" height="30"/>
+                                <state key="normal" title="acessar webservice"/>
+                                <connections>
+                                    <action selector="acessoWebService" destination="BYZ-38-t0r" eventType="touchUpInside" id="QIA-Az-zWr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
